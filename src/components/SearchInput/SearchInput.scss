@@ -1,0 +1,21 @@
+form {
+	margin-top: 50px;
+	input {
+		display: flex;
+		z-index: 3;
+		height: 44px;
+		background: #202124;
+		border: 1px solid #5f6368;
+		box-shadow: none;
+		border-radius: 24px;
+		margin: 0 auto;
+		width: 638px;
+		padding-left: 30px;
+		color: gold;
+
+		::placeholder {
+			color: rgb(255, 145, 0);
+			font-size: 3rem;
+		}
+	}
+}
