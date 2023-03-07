@@ -1,21 +1,61 @@
-form {
-	margin-top: 50px;
-	input {
-		display: flex;
-		z-index: 3;
-		height: 44px;
-		background: #202124;
-		border: 1px solid #5f6368;
-		box-shadow: none;
-		border-radius: 24px;
-		margin: 0 auto;
-		width: 638px;
-		padding-left: 30px;
-		color: gold;
+.search-input {
+	margin-top: 150px;
+	max-width: 800px;
+	text-align: center;
+	margin: 0 auto;
 
-		::placeholder {
-			color: rgb(255, 145, 0);
-			font-size: 3rem;
+  h1{
+    color: #ffffff;
+  }
+
+	&__form {
+		display: flex;
+
+		input {
+			display: flex;
+			z-index: 3;
+			height: 44px;
+			background: #202124;
+			border: 1px solid #5f6368;
+			box-shadow: none;
+			border-radius: 24px;
+			margin: 0 auto;
+			width: 100%;
+			padding: 12px 30px;
+			color: #ffffff;
+			text-align: center;
+			font-size: 1.5rem;
+			margin-right: 12px;
+
+			&::placeholder {
+				color: rgb(255, 255, 255);
+				font-size: 1em;
+				text-align: center;
+				opacity: 0.45;
+
+				:focus::-webkit-input-placeholder {
+					color: transparent;
+				}
+				:focus::-moz-placeholder {
+					color: transparent;
+				}
+				:focus:-moz-placeholder {
+					color: transparent;
+				}
+				:focus:-ms-input-placeholder {
+					color: transparent;
+				}
+			}
+		}
+
+		button {
+			display: flex;
+			align-items: center;
+			justify-content: space-evenly;
+			width: 20%;
+			border-radius: 24px;
+			border: none;
+			cursor: pointer;
 		}
 	}
 }
