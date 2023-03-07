@@ -12,7 +12,7 @@ module.exports = {
 	},
 	devtool: 'inline-source-map',
 	devServer: {
-		static: './dist',
+    watchFiles: './src',
 	},
 	module: {
 		rules: [
@@ -50,6 +50,6 @@ module.exports = {
 		}),
 		new MiniCssExtractPlugin({
 			filename: 'style/[name].[contenthash].css',
-		})
+		}),
 	],
 };
